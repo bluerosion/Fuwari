@@ -100,6 +100,6 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 export const commentConfig: CommentConfig = {
   twikoo: {
-    envId: 'http://twikoo.lowr.ink',
+    envId: 'https://twikoo.lowr.ink',
   },
 }
