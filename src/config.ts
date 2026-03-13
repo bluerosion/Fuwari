@@ -50,6 +50,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/friends/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
+		{
+			name: "图床",
+			url: "https://i.lowr.ink", // Internal links should not include the base path, as it is automatically added
+			external: false, // Show an external link icon and will open in a new tab
+		},		
 	],
 };
 
