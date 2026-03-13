@@ -15,9 +15,13 @@ lang: zh_CN
 # 鸣谢
 
 [二叉树树](https://2x.nz/)：提供[fuwari博客搭建教程](https://2x.nz/posts/fuwari/)，博客部分源码也从这~~借鉴~~移植了一点
+
 [Zokiio](https://blog.tantalum.life/)：提供[fuwari接入twikoo评论系统](https://blog.tantalum.life/posts/add-comments-to-fuwari-with-twikoo/)思路
+
 [cloudflare](https://www.cloudflare.com)：伟大！无需多言！
 
 > 愿你前行的道路，群星闪耀。
+
 > 愿你走过的旅途，百花绽放。
+
 > 你即是上帝的馈赠；世界因你而瑰丽。
