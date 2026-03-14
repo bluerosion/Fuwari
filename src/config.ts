@@ -78,7 +78,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/bluerosion",
+			url: "https://github.com/bluerosion/Fuwari",
 		},
 	],
 };

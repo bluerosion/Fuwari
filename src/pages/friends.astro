@@ -37,15 +37,15 @@ const breadcrumbSchema = {
     <div class="card-base p-6 md:p-8">
         <div class="flex items-center gap-2 mb-6">
             <div class="h-8 w-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-black/70">
-                <Icon name="material-symbols:diversity-3" class="text-[1.5rem]">
+                <Icon name="material-symbols:diversity-3" class="text-[1.5rem]" />
             </div>
-            <h1 class="text-2xl font-bold text-white">友链</h1>
+            <h1 class="text-2xl font-bold text-black/90 dark:text-white/90">友链</h1>
         </div>
 
-        <!-- 申请友链 -->
-            <div class="mb-4">
-                <LinkSubmitInfo dataType="friends"></LinkSubmitInfo>
-            </div>
+        <div class="mb-4">
+            <LinkSubmitInfo dataType="friends"></LinkSubmitInfo>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {friends.map((friend) => (
                 <a href={friend.url} target="_blank" class="friend-card">
@@ -53,20 +53,19 @@ const breadcrumbSchema = {
                         <div class="relative w-5 h-5 rounded overflow-hidden" style={`--theme-hue: ${siteConfig.themeColor.hue}`}>
                             <img src={friend.avatar} loading="lazy" class="w-full h-full object-cover transition-opacity duration-500" alt={`${friend.name}的头像`} />
                         </div>
-                        <div class="font-bold text-white">{friend.name}</div>
+                        <div class="friend-name font-bold text-black/90 dark:text-white/90">{friend.name}</div>
                     </div>
-                    <div class="text-sm text-white/50">{friend.description}</div>
+                    <div class="friend-desc text-sm text-black/50 dark:text-white/50">{friend.description}</div>
                 </a>
             ))}
         </div>
-
-
-
+    </div>
 </MainGridLayout>
+
 
 <style>
     .friend-card {
-        @apply border border-white/10 hover:border-white/20 hover:bg-white/5 transition flex flex-col gap-1 p-4 rounded-lg;
+        @apply border border-black/5 dark:border-white/10 hover:border-[var(--primary)] hover:bg-[var(--primary-light)] transition flex flex-col gap-1 p-4 rounded-lg;
         transition-property: background-color, border-color, scale;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.15s;
@@ -76,13 +75,13 @@ const breadcrumbSchema = {
     .friend-card:active {
         scale: .98;
     }
-    
+   
     .friend-card:hover .font-bold {
-        color: var(--btn-content);
+        color: var(--primary);
     }
     
     .friend-card:hover .text-sm {
-    @apply text-white;
+        @apply text-black/70 dark:text-white/70;
     }
 
     .friend-card .font-bold,
@@ -92,3 +91,4 @@ const breadcrumbSchema = {
         transition-duration: 0.15s;
     }
 </style>
+
