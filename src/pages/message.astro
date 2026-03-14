@@ -1,0 +1,53 @@
+---
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+import Comment from "@components/comment/index.astro"; // 使用我们之前优化过的评论组件
+import { siteConfig } from "@/config";
+
+// 留言板的面包屑导航数据
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	itemListElement: [
+		{
+			"@type": "ListItem",
+			position: 1,
+			name: "首页",
+			item: Astro.site,
+		},
+		{
+			"@type": "ListItem",
+			position: 2,
+			name: "留言板",
+			item: new URL("/message", Astro.site).toString(),
+		},
+	],
+};
+
+// 模拟一个伪文章对象传给评论组件，确保路径正确
+const pageData = {
+    data: { title: "留言板" },
+    slug: "message" 
+}
+---
+
+<MainGridLayout title="留言板">
+    <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+    
+    <div class="card-base p-6 md:p-8 mb-4">
+            <h1 class="text-2xl font-bold text-black/90 dark:text-white/90">留言板</h1>
+    </div>
+
+    <Comment post={pageData}></Comment>
+
+</MainGridLayout>
+
+<style>
+    /* 可以在这里添加一些留言板专属的微调动画 喵 */
+    .welcome-card {
+        transition: transform 0.3s ease;
+    }
+    .welcome-card:hover {
+        transform: translateY(-2px);
+    }
+</style>
