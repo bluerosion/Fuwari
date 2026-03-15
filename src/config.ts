@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "https://api.elaina.cat/random/pc", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "https://api.elaina.cat/random/pc/", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -62,12 +62,12 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "状态监控",
-			url: "https://status.lowr.ink", // Internal links should not include the base path, as it is automatically added
+			url: "https://status.lowr.ink/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},	
 		{
 			name: "图床",
-			url: "https://i.lowr.ink", // Internal links should not include the base path, as it is automatically added
+			url: "https://i.lowr.ink/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},			
 	],
