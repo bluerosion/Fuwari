@@ -56,10 +56,20 @@ export const navBarConfig: NavBarConfig = {
 			external: false, // Show an external link icon and will open in a new tab
 		},
 		{
+			name: "个人主页",
+			url: "https://bruisa.top/", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
+		{
+			name: "状态监控",
+			url: "https://status.lowr.ink", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},	
+		{
 			name: "图床",
 			url: "https://i.lowr.ink", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
-		},		
+		},			
 	],
 };
 
