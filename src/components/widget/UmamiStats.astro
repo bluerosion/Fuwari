@@ -28,8 +28,8 @@ const { class: className, style } = Astro.props;
 <script>
 const UMAMI_CONFIG = {
     baseUrl: 'https://cloud.umami.is/analytics/us/api', // 如果你选的区域是欧盟，请改为 https://cloud.umami.is/analytics/eu/api
-    websiteId: 'r9UfeKYY26CRaw2I',
-    shareToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaGFyZUlkIjoiZTYzMjA1MjgtM2JmZS00OGE5LWIzZTMtZjVmMmYzNzVmNTJlIiwid2Vic2l0ZUlkIjoiNTE0ODgyYjItZTFhZi00MTM1LTkxMDktM2ZlNjE5MmJlOTMxIiwicGFyYW1ldGVycyI6eyJ1dG0iOnRydWUsImdvYWxzIjp0cnVlLCJldmVudHMiOnRydWUsImNvbXBhcmUiOnRydWUsImZ1bm5lbHMiOnRydWUsInJldmVudWUiOnRydWUsImpvdXJuZXlzIjp0cnVlLCJvdmVydmlldyI6dHJ1ZSwicmVhbHRpbWUiOnRydWUsInNlc3Npb25zIjp0cnVlLCJicmVha2Rvd24iOnRydWUsInJldGVudGlvbiI6dHJ1ZSwiYXR0cmlidXRpb24iOnRydWV9LCJpYXQiOjE3NzM3Mzk4OTJ9.yDM1yQ-e4AVX5pw1DDl6RroHfJKs4RjQ0c-sXn95pHQ'
+    websiteId: '514882b2-e1af-4135-9109-3fe6192be931',
+    shareToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaGFyZUlkIjoiZTYzMjA1MjgtM2JmZS00OGE5LWIzZTMtZjVmMmYzNzVmNTJlIiwid2Vic2l0ZUlkIjoiNTE0ODgyYjItZTFhZi00MTM1LTkxMDktM2ZlNjE5MmJlOTMxIiwicGFyYW1ldGVycyI6eyJ1dG0iOnRydWUsImdvYWxzIjp0cnVlLCJldmVudHMiOnRydWUsImNvbXBhcmUiOnRydWUsImZ1bm5lbHMiOnRydWUsInJldmVudWUiOnRydWUsImpvdXJuZXlzIjp0cnVlLCJvdmVydmlldyI6dHJ1ZSwicmVhbHRpbWUiOnRydWUsInNlc3Npb25zIjp0cnVlLCJicmVha2Rvd24iOnRydWUsInJldGVudGlvbiI6dHJ1ZSwiYXR0cmlidXRpb24iOnRydWV9LCJpYXQiOjE3NzM3NTQ3OTl9.Xg1oxzlCCNjmjx8RDxLFhuRwJlMH27dV-NY8oidFwMY'
 };
 
 function formatNumber(num: number): string {
@@ -44,7 +44,7 @@ function formatNumber(num: number): string {
 async function fetchUmamiStats() {
     try {
         const endAt = Date.now();
-        const startAt = Date.now() - 2592000000;
+        const startAt = Date.now() - 0;
 
         const url = `${UMAMI_CONFIG.baseUrl}/websites/${UMAMI_CONFIG.websiteId}/stats?startAt=${startAt}&endAt=${endAt}&unit=hour&timezone=Asia%2FShanghai`;
 
