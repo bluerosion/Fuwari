@@ -11,6 +11,8 @@ async function getRawSortedPosts() {
 
 	const sorted = allBlogPosts.sort((a, b) => 
 	{
+	    if (a.data.pinned && !b.data.pinned) return -1;
+	    if (!a.data.pinned && b.data.pinned) return 1;
 	    if (a.data.pinned !== b.data.pinned) {
             return a.data.pinned ? -1 : 1;
         }
