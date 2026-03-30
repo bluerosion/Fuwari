@@ -2,7 +2,7 @@
 title: 关于此博客
 published: 2026-03-12
 description: 这是我第一次搭建博客，做的不好请见谅
-image: /assets/images/post.jpg
+image: ./assets/images/post.jpg
 tags:
   - blog
 category: 博客搭建日记
