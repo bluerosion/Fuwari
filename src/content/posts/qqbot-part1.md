@@ -11,7 +11,7 @@ lang: zh_CN
 ---
 新人初稿，写的不好请见谅
 
-万万没想到这东西我居然拖了两个多月，我还是太有实力了（划掉）
+~~万万没想到这东西我居然拖了两个多月，我还是太有实力了~~
 
 # 前言
 
@@ -26,7 +26,8 @@ lang: zh_CN
 **这些协议端在官方定义里也是bot框架，但大部分无法加载通过官方途径加载第三方插件，但都具备以上特征，为了方便区分，统称为协议端**
 
 ## NapCat
-![[qqbot-part1-1.png]]
+
+![[./assets/images/qqbot-part1-1.png]]
 
 > 基于 TypeScript 构建的 Bot 框架，通过相应的启动器或者框架，主动调用 QQ Node 模块提供给客户端的接口，实现 Bot 的功能。
 >  ——摘自官方文档
@@ -37,7 +38,7 @@ lang: zh_CN
 
 ## Lagrange
 
-![[qqbot-part1-2.jpeg]]
+![[./assets/images/qqbot-part1-2.jpeg]]
 
 > Lagrange为该项目名称，该项目中的框架较出名的有：Lagrange.OneBot、go-cqhttp（此项目与Mirai版虽然同名，但实现技术完全不同！不要搞混了！）
 
@@ -46,7 +47,8 @@ Lagrange的所有项目均基于其内核Lagrange.core，相较于mirai这类模
 **由于部分原因，Lagrange项目已全部停更，官方签名服务器已关闭，各位可以使用Napcat等本地签名的QQNT框架，如想继续使用Lagrange框架，请自备签名服务器，这里仅介绍相关bot框架**
 
 # mirai及其衍生框架
-![[qqbot-part1-3.png]]
+
+![[./assets/images/qqbot-part1-3.png]]
 
 > Mirai，正如你所见，这个名字不带任何的前缀或后缀，它是整个生态的中心，在这个生态中，所有的项目都直接或间接与 Mirai 有密不可分的关系，Mirai为用户提供了最基础且核心的功能：接收消息与发送消息。
 >  ——摘自官方文档
@@ -54,7 +56,8 @@ Lagrange的所有项目均基于其内核Lagrange.core，相较于mirai这类模
 与酷Q同时代的产物，2020年酷Q停运后（根据网络上搜到的消息，Mirai貌似也有停运的消息），Mirai替代了酷Q，2023年，随着tx对协议库的围追堵截，Mirai停止了开发
 
 酷Q（CKYU）
-![[qqbot-part1-4.jpg]]
+
+![[./assets/images/qqbot-part1-4.jpg]]
 
 由Coxss等人主导开发，其衍生插件协议CQHTTP（酷Q停运后由社区成员接手修改为OneBot协议）至今仍在被各大框架采用，2020年晨风机器人作者被捕后酷Q等机器人框架停止运营，结束了酷Q九年来的辉煌...
 
@@ -156,7 +159,7 @@ NapCat.Framework - 通用性手动教程
 
 在 LiteLoaderQQNT 的设置页面（如下图）将 NapCat.Framework.zip 导入即可。
 
-![[qqbot-part1-5.png]]
+![[./assets/images/qqbot-part1-5.png]]
 
 **强烈不推荐 LL 官方的修补方案，其方案将导致 NapCat 扩展 API 失效的。 同时污染 QQ 本身环境，添加环境变量，清理 LL 需要一定计算机基础。 包括需要调试 QQ 的用户，强烈推荐 once 或者绿色版本。**
 
@@ -199,7 +202,7 @@ curl -o napcat.sh https://nclatest.znin.net/NapNeko/NapCat-Installer/main/script
 ### 运行
 
 #### 对于windows
-```
+```shell
 双击 Lagrange.OneBot.exe 运行即可
 ```
 
@@ -223,7 +226,7 @@ chmod +x ./Lagrange.OneBot
 
 [Lagrange Config Generator](https://lagrangedev.github.io/lagrange-config-generator/) 简化了配置文件的生成过程. 你也可以参考下文的说明手动修改配置文件.
 
-```json5{11-12,24-43}
+```json
 {
   "$schema": "https://raw.githubusercontent.com/LagrangeDev/Lagrange.Core/master/Lagrange.OneBot/Resources/appsettings_schema.json",
   "Logging": {
@@ -289,7 +292,7 @@ chmod +x ./Lagrange.OneBot
 
 #### 反向 WebSocket 配置
 
-```json5
+```json
 {
 	"Type": "ReverseWebSocket",
 	"Host": "127.0.0.1",
@@ -304,7 +307,7 @@ chmod +x ./Lagrange.OneBot
 
 #### 正向 WebSocket 配置
 
-```json5
+```json
 {
 	"Type": "ForwardWebSocket",
 	"Host": "127.0.0.1",
@@ -317,7 +320,7 @@ chmod +x ./Lagrange.OneBot
 
 #### HTTP POST 配置
 
-```json5{3}
+```json
 {
   "Type": "HttpPost",
   "Host": "127.0.0.1", // 可以填写前缀协议, 例如 `https://`
@@ -374,13 +377,13 @@ chmod +x ./Lagrange.OneBot
 
 1. 双击`go-cqhttp_*.exe`，根据提示生成运行脚本
 2. 双击运行脚本
-```
+```shell
 [WARNING]: 尝试加载配置文件 config.yml 失败: 文件不存在
 [INFO]: 默认配置文件已生成,请编辑 config.yml 后重启程序.
 ```
 3. 参照[config.md](https://github.com/ishkong/go-cqhttp-docs/blob/main/docs/guide/config.md)和你所用到的插件的 `README` 填入参数
 4. 再次双击运行脚本
-```
+```shell
 [INFO]: 登录成功 欢迎使用: balabala
 ```
 
@@ -393,14 +396,14 @@ chmod +x ./Lagrange.OneBot
 1. 通过 SSH 连接到服务器
 2. `cd`到解压目录
 3. 输入 `./go-cqhttp`, `Enter`运行 , 此时将提示
-```
+```shell
 [WARNING]: 尝试加载配置文件 config.yml 失败: 文件不存在
 [INFO]: 默认配置文件已生成,请编辑 config.yml 后重启程序.
 ```
 
 4. 参照 [config.md](https://github.com/Mrs4s/go-cqhttp/blob/master/docs/config.md) 和你所用到的插件的 `README` 填入参数
 5. 再次输入 `./go-cqhttp`, `Enter`运行
-```
+```shell
 [INFO]: 登录成功 欢迎使用: balabala
 ```
 
