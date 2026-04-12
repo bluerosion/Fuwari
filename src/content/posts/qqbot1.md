@@ -6,7 +6,7 @@ image: ./assets/images/qqbot-part1.jpg
 tags:
   - bot
 category: Re：从零开始的QQ机器人搭建指北
-draft: true
+draft: false
 lang: zh_CN
 ---
 新人初稿，写的不好请见谅
