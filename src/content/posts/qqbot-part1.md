@@ -27,7 +27,7 @@ lang: zh_CN
 
 ## NapCat
 
-![[./assets/images/qqbot-part1-1.png]]
+![NapCat](./assets/images/qqbot-part1-1.png)
 
 > 基于 TypeScript 构建的 Bot 框架，通过相应的启动器或者框架，主动调用 QQ Node 模块提供给客户端的接口，实现 Bot 的功能。
 >  ——摘自官方文档
@@ -38,7 +38,7 @@ lang: zh_CN
 
 ## Lagrange
 
-![[./assets/images/qqbot-part1-2.jpeg]]
+![Lagrange](./assets/images/qqbot-part1-2.jpeg)
 
 > Lagrange为该项目名称，该项目中的框架较出名的有：Lagrange.OneBot、go-cqhttp（此项目与Mirai版虽然同名，但实现技术完全不同！不要搞混了！）
 
@@ -48,7 +48,7 @@ Lagrange的所有项目均基于其内核Lagrange.core，相较于mirai这类模
 
 # mirai及其衍生框架
 
-![[./assets/images/qqbot-part1-3.png]]
+![go-cqhttp](./assets/images/qqbot-part1-3.png)
 
 > Mirai，正如你所见，这个名字不带任何的前缀或后缀，它是整个生态的中心，在这个生态中，所有的项目都直接或间接与 Mirai 有密不可分的关系，Mirai为用户提供了最基础且核心的功能：接收消息与发送消息。
 >  ——摘自官方文档
@@ -57,7 +57,7 @@ Lagrange的所有项目均基于其内核Lagrange.core，相较于mirai这类模
 
 酷Q（CKYU）
 
-![[./assets/images/qqbot-part1-4.jpg]]
+![CKYU](./assets/images/qqbot-part1-4.jpg)
 
 由Coxss等人主导开发，其衍生插件协议CQHTTP（酷Q停运后由社区成员接手修改为OneBot协议）至今仍在被各大框架采用，2020年晨风机器人作者被捕后酷Q等机器人框架停止运营，结束了酷Q九年来的辉煌...
 
@@ -159,8 +159,7 @@ NapCat.Framework - 通用性手动教程
 
 在 LiteLoaderQQNT 的设置页面（如下图）将 NapCat.Framework.zip 导入即可。
 
-![[./assets/images/qqbot-part1-5.png]]
-
+![指引](./assets/images/qqbot-part1-5.png)
 **强烈不推荐 LL 官方的修补方案，其方案将导致 NapCat 扩展 API 失效的。 同时污染 QQ 本身环境，添加环境变量，清理 LL 需要一定计算机基础。 包括需要调试 QQ 的用户，强烈推荐 once 或者绿色版本。**
 
 #### Linux
