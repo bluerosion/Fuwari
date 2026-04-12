@@ -27,7 +27,7 @@ import { pluginFileIcons } from "@xt0rted/expressive-code-file-icons";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "http://blog.lowr.ink/",
+	site: "http://blog.bruisa.top/",
 	base: "/",
 	trailingSlash: "always",
 	integrations: [

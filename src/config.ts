@@ -10,7 +10,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "BluerosionのBlog",
-	subtitle: "再这里随便写点东西应该没人看到吧",
+	subtitle: "分享个人实践经验的个人技术博客",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 240, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -74,9 +74,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "http://q.qlogo.cn/headimg_dl?dst_uin=3524309131&spec=5&img_type=webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "bluerosion",
-	bio: "愿你前行的道路，群星闪耀。\n愿你走过的旅途，百花绽放。\n你即是上帝的馈赠；世界因你而瑰丽。",
+	bio: "愿你前行的道路，群星闪耀。愿你走过的旅途，百花绽放。你即是上帝的馈赠；世界因你而瑰丽。",
 	links: [
 		{
 			name: "QQ",
@@ -111,6 +111,6 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 export const commentConfig: CommentConfig = {
   twikoo: {
-    envId: 'https://twikoo.lowr.ink',
+    envId: 'https://twikoo.bruisa.top',
   },
 }
